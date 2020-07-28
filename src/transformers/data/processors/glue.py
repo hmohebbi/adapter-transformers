@@ -641,9 +641,7 @@ class NewsProcessor(DataProcessor):
             guid = "%s-%s" % (set_type, i)
             
             text_a = line[text_index]
-            print(text_a)
             label = None if set_type == "test" else line[1]
-            print(label)
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
