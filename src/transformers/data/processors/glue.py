@@ -597,7 +597,7 @@ class SpamProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -635,13 +635,12 @@ class NewsProcessor(DataProcessor):
         examples = []
         text_index =  0
         for (i, line) in enumerate(lines):
-            print(i)
             if i == 0:
                 continue
             guid = "%s-%s" % (set_type, i)
             
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -682,7 +681,7 @@ class CRairlineProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -724,7 +723,7 @@ class CrmessagePrecessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -766,7 +765,7 @@ class CRdisastersProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -807,7 +806,7 @@ class CReconomicProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -849,7 +848,7 @@ class CRemotionProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -892,7 +891,7 @@ class CRwarmProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -934,7 +933,7 @@ class CRpoliticalProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -976,7 +975,7 @@ class CRbiasProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -1019,7 +1018,7 @@ class CRpltmsgProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label =line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -1106,7 +1105,7 @@ class CRopnProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -1150,7 +1149,7 @@ class NewsagProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
@@ -1192,7 +1191,7 @@ class CRusProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[text_index]
-            label = None if set_type == "test" else line[1]
+            label = line[1]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
